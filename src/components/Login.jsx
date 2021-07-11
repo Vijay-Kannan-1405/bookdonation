@@ -38,7 +38,7 @@ function Login() {
                     <a href="#" className="btn btn-danger"><i class="fa fa-google"></i>&nbsp; Google</a>
                 </div>
                 <hr />
-                <p className="text-center">Don't have an account yet ?<a href="/" className="register">Create an account</a></p>
+                <p className="text-center">Don't have an account yet ?<a href="/register" className="register">Create an account</a></p>
             </div>
             
         </div>
