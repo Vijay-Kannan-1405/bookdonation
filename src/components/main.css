@@ -1,21 +1,22 @@
 body {
   overflow: hidden;
+  background-color: #d8d8d8;
 }
 
 #root {
-  padding-top: 4rem;   
   padding-bottom: 100%;
-  background-color: #d8d8d8;
+  /* background-color: #d8d8d8; */
 }
 
 
 .form {
   margin: 0 auto;
-  width: 23rem;
+  width: 25rem;
   height: 35rem;
   background-color: rgb(224, 224, 224);
   border-radius: 2rem;
-  box-shadow: 13px 13px 20px #616161, -13px -13px 20px #f5f5f5;
+  box-shadow: 8px 8px 5px rgb(56, 56, 56), -8px -8px 5px rgb(248, 248, 248);
+  /* box-shadow: -15px -15px 30px #313131; */
 }
 
 .inputs {
@@ -61,29 +62,25 @@ body {
   border-radius: 0.5rem;
   border: none;
   cursor: pointer;
-  width: 40%;
+  width: 50%;
   font-size: 1rem;
   font-weight: 600;
   opacity: 0.9;
-  margin-left: 4rem;
+  margin-left: 2.5rem;
 }
 
 .btn-log:hover {
   opacity: 1;
 }
 
-.login-bottom {
-  margin-top: 0.px;
-  margin-bottom: 0.1px;
-}
+
 
 .forgot-pass:hover, .register:hover {
   text-decoration: none;
-  /* width: 100%;  */
 }
 
 .block {
-  width: 23rem;
+  width: 100%;
   display: grid;
   grid-template-columns: 1fr 20px 1fr;
   grid-template-rows: 1fr;
@@ -107,4 +104,118 @@ hr {
 
 h2 {
   padding-top: 2rem;
+}
+
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 500px) {
+/* Styles */
+.full-body {
+  margin: 0 auto;
+  position: fixed;
+}
+
+.image-bg {
+  width: 40rem;
+  height: 42rem;
+  border-radius: 0.8rem;
+  /* box-shadow: -5px -5px 15px rgb(59, 59, 59); */
+  position: fixed;
+  top: 1.5rem;
+  margin: 0% 20% 0% 34%;
+}
+
+.welcome-txt {
+  color: aliceblue;
+  text-align: center;
+  padding: 15.5rem 1rem 1rem 1rem;
+}
+
+.below-txt {
+  color: aliceblue;
+  text-align: center;
+  padding: 19rem 1rem 1rem 1rem;
+  font-size: 1rem;
+}
+
+.reg-but {
+  color: rgb(255, 255, 255);
+  /* background-color: rgb(211, 19, 19); */
+  background-color: rgb(11, 93, 216);
+  box-shadow: 5px 5px 10px rgb(43, 43, 43);
+  padding: 8px;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  width: 10rem;
+  height: 2.6rem;
+  font-size: 1rem;
+  font-weight: 600;
+  opacity: 0.8;
+  margin: 22rem 0rem 0rem 15rem;
+}
+
+.reg-but:hover {
+  opacity: 1;
+}
+
+.below-register {
+  display: none;
+}
+
+.form {
+  position: fixed;
+  top: 5rem;
+  margin: 0% 10% 0% 12%;
+  box-shadow: -7px -2.8px 3px #2524249f;
+}
+
+.icon {
+  box-shadow: 6px 8px 8px #5f5f5f, -3px 0px 1px rgb(7, 64, 185);
+}
+
+.block {
+  padding: 1.5rem 0rem 1.5rem 0rem;
+}
+
+.blob-corner-1 {
+  width: 15rem;
+  height: 15rem;
+  position: absolute;
+  top: -4rem;
+  left: -8rem;
+}
+
+.blob-corner-2 {
+  width: 15rem;
+  height: 15rem;
+  position: fixed;
+  bottom: -1.9rem;
+  right: -2.5rem;
+}
+
+
+.blob-corner-3 {
+  width: 7rem;
+  height: 7rem;
+  position: fixed;
+  top: 7rem;
+  right: -3.5rem;
+}
+
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 350px) 
+and (max-device-width : 550px) {
+/* Styles */
+.image-bg, .blob-corner-1, .blob-corner-2, .blob-corner-3 {
+  display: none;
+}
+#root {
+  padding: 7rem 1rem 1rem 1rem;
+}
+
 }
